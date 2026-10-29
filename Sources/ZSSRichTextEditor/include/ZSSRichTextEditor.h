@@ -251,7 +251,7 @@ static NSString * const ZSSEditorContent = @"document.activeElement.id=='zss_edi
  *  （例如自有多选相册 + 对象存储），选好后调用 -insertImage:alt: 插入。
  *  未设置时使用内置的 UIImagePickerController。
  */
-@property (nonatomic, copy, nullable) void (^imagePickerHandler)(ZSSRichTextEditor *editor);
+@property (nonatomic, copy, nullable) void (^imagePickerHandler)(ZSSRichTextEditor * _Nonnull editor);
 
 @property(nonatomic,strong)UIButton * _Nonnull SetBtns;//设置隐私
 - (void)SetBtnclick;

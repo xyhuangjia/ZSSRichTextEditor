@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Zed Said Studio' => 'https://github.com/nnhubbard' }
   s.source           = { :git => 'https://github.com/xyhuangjia/ZSSRichTextEditor.git', :tag => s.version.to_s }
 
-  s.platform         = :ios, '13.0'
+  s.platform         = :ios, '15.0'
   s.requires_arc     = true
   s.frameworks       = 'UIKit', 'WebKit', 'JavaScriptCore'
 

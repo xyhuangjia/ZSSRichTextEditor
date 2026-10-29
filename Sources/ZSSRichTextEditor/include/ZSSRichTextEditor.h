@@ -241,6 +241,11 @@ static NSString * const ZSSEditorContent = @"document.activeElement.id=='zss_edi
 
 
 /**
+ *  保存当前光标选区。异步插入图片/HTML 前调用，插入时才能回到用户原来的位置。
+ */
+- (void)prepareInsert;
+
+/**
  *  插入 base64 图片。常见用法：先把本地图片以 base64 占位插入编辑器，
  *  上传成功后再用 -insertImage:alt: 替换为远程地址。
  */

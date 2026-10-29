@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZSSRichTextEditor'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '基于 WKWebView 的所见即所得富文本编辑器。'
   s.description      = <<-DESC
                         ZSSRichTextEditor 的 WKWebView 维护版本：工具栏、颜色选择、字体选择、

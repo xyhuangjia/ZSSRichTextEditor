@@ -1988,6 +1988,10 @@ static CGFloat kDefaultScale = 0.5;
     }];
 }
 
+- (void)prepareInsert {
+    [self.editorView evaluateJavaScript:@"zss_editor.prepareInsert();" completionHandler:nil];
+}
+
 - (void)insertImageBase64String:(NSString *)imageBase64String alt:(NSString *)alt {
     NSString *trigger = [NSString stringWithFormat:@"zss_editor.insertImageBase64String(\"%@\", \"%@\");", imageBase64String, alt];
     [self.editorView evaluateJavaScript:trigger completionHandler:^(NSString *result, NSError *error) {
